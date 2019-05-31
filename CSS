@@ -1,0 +1,223 @@
+/*navbar*/
+
+#navbar {
+	position: fixed;
+	top: 0;
+}
+
+ul {
+  margin: 0;
+	position: fixed;
+	width: 100%;
+	list-style-type: none;
+	background-color: #000000;
+	overflow: hidden;
+	top: 0;
+	font-family: 'Bungee Inline';
+	font-size: 1em;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: inline-block;
+	color: #99ffcc;
+	padding: 8px 8px;
+}
+
+li a:hover {
+	background-color: #b3ffff;
+	color: #000000;
+}
+
+/*body*/
+
+body {
+	font-family: lobster;
+	text-align: center;
+	background-color: #000000;
+}
+
+/*page headers*/
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*PAGE ONE-HOME*/
+
+/*HOME background img*/
+
+.pageone {
+	background: url("https://images.unsplash.com/photo-1548883151-3b92dbd284dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80");
+	background-size: cover;
+}
+
+/*name header*/
+
+.name {
+	display: inline-block;
+	position: relative;
+	padding: .2em;
+	margin-top: 10%;
+	margin-right: -5%;
+	font-size: 4em;
+	background: black;
+	opacity: .75;
+	border-radius: 5px;
+}
+
+/*coding: quote*/
+
+.home-quote {
+	color: white;
+	font-family: 'Alegreya Sans';
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000000;
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-top: -2%
+}
+
+/*WELCOME-SECTION-make welcome screen equal to height of viewport*/
+
+#welcome-section {
+	height: 100vh;
+}
+
+/*PAGE TWO-ABOUT ME*/
+
+.pagetwo {
+	background-color: #7fcfa4;
+}
+
+#about-me {
+  padding: 5vw 0 10vw 0; 
+}
+
+/*profile pic, page two*/
+
+#aboutmeimg {
+	float: left;
+	max-width: 50vw;
+	max-height: 50vh;
+	border-radius: 50%;
+	border: solid;
+	margin-left: 8%;
+	margin-top: 8%;
+}
+
+/*about me text*/
+
+#about-me-text {
+	font-family: 'Alegreya Sans';
+	font-size: 1.5em;
+	display: block;
+	color: black;
+	position: relative;
+	margin-right: 10%;
+	margin-top: 6%;
+}
+
+/*box around pic and text*/
+
+.pic-and-text {
+	background-color: white;
+	padding: 2em;
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-top: -5em;
+}
+
+/*PAGE THREE-PORTFOLIO*/
+
+/*portfolio background img*/
+
+.pagethree {
+	background-color: #6e91b0;
+}
+
+.project-pic {
+	padding: 10px;
+	width: 50%;
+	height: 180px;
+	border-bottom: 2px solid lightblue;
+}
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 2em;
+}
+
+figcaption {
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: 'Alegreya Sans';
+}
+
+/*PAGE FOUR-CONTACT ME*/
+
+/*contact me background img*/
+
+.pagefour {
+	background: url("https://images.unsplash.com/photo-1514530963096-e9aa1f285eb5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38063555a2c1aacf5853f50f245e3f6a&auto=format&fit=crop&w=1350&q=80");
+	background-size: cover;
+}
+
+#contact-links {
+	height: 100vh;
+}
+
+/*contact button styling*/
+
+#contactbtns {
+	display: inline-block;
+	font-size: 1em;
+	margin-left: 50%;
+	margin-top: -4%;
+}
+
+/*FOOTER*/
+
+footer {
+	font-family: 'Bungee Inline';
+	text-align: center;
+	font-size: 1em;
+	background-color: #99ffcc;
+}
+
+/*responsively scale text */
+
+/*media queries*/
+
+@media only screen and (max-width: 320px) {
+	body {
+		font-size: 1em;
+	}
+}
+
+/* 0.75em(12px) @ 20em(320px) increasing to 1.2em(19.2px) @ 120em(1920px) */
+
+@media (min-width: 20em) {
+	:root {
+		font-size: calc(0.75rem + ((1vw - 0.2em) * 0.45));
+		/* Where: * 0.45 = 100 * font_Size_Difference / viewport_Width_Difference */
+	}
+}
+
+/* Prevent font scaling beyond this breakpoint */
+
+@media (min-width: 120em) {
+	:root {
+		font-size: 1.2em;
+	}
+}
